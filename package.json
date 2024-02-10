@@ -1,7 +1,7 @@
 {
-  "name": "educator-js-codespace-template",
+  "name": "stanley-dsouza",
   "version": "1.0.0",
-  "description": "Educator JS Codespace Template",
+  "description": "Portfolio developed using React and Parcel",
   "source": "src/index.html",
   "homepage": "http://stands30.github.io/portfolio-v2",
   "scripts": {
