@@ -7,7 +7,7 @@
   "scripts": {
     "start": "parcel",
     "build": "parcel build",
-    "build-gh": "parcel build --public-url 'http://stands30.github.io/portfolio-v2}'",
+    "build-gh": "parcel build --public-url 'http://stands30.github.io/portfolio-v2'",
     "predeploy": "npm run build-gh",
     "deploy": "gh-pages -d dist"
   },
