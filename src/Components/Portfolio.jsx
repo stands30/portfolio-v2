@@ -31,28 +31,32 @@ const imageAltText = "desktop with books and laptop";
  */
 const projectList = [
   {
-    title: "10 Things To Know About Azure Static Web Apps 🎉",
-    description:
-      "Collaboration to create a beginner friendly article to help explain Azure Static Web Apps and tooling to get started.",
-    url: "https://dev.to/azure/10-things-to-know-about-azure-static-web-apps-3n4i",
+    title: 'Krypt App',
+    description:"A Web 3.0 App where one can send ethereum coins securely ",
+    tags: [ 'React Js', 'Solidity', 'MetaMask'],
+    url: 'https://react-kryptoverse.netlify.app/',
+    id: 1,
   },
   {
-    title: "Web Development for Beginners",
-    description:
-      "Contributed sketch note imagery to accompany each lesson. These help provide visual representation of what is being taught.",
-    url: "https://github.com/microsoft/web-dev-for-beginners",
+    title: 'Cryptoverse',
+    description:"Cryptocurrency app providing comprehensive information: News, Exchanges, Statistics.",
+    tags: [ 'React Js', ' Redux Toolkit', ' RapidAPI' ],
+    url: 'https://cryptoverse-report.netlify.app/',
+    id: 2,
   },
   {
-    title: "My Resume Site",
-    description:
-      "Created from Microsoft's resume workshop and deployed to GitHub pages. Includes my experience and design abilities.",
-    url: "https://github.com/microsoft/workshop-library/tree/main/full/build-resume-website",
+    title: 'AI News App',
+    description:"A News App which can be read through AI, Alan AI will read out the news for you",
+    tags: [ 'React Js', 'Alan AI' ],
+    url: 'https://ai-news-app.netlify.app/',
+    id: 3,
   },
   {
-    title: "GitHub Codespaces and github.dev",
-    description:
-      "Video interview to explain when to use GitHub.dev versus GitHub Codespaces, and how best to use each tool.",
-    url: "https://www.youtube.com/watch?v=c3hHhRME_XI",
+    title: 'Covid-19 Global Tracker',
+    description: "Using React Js have developed global covid cases tracker, where one can track covid cases in each country ",
+      tags: ['React', 'Material UI'],
+    url: 'https://covid19globaltracker.herokuapp.com/',
+    id: 4,
   },
 ];
 
@@ -75,6 +79,13 @@ const Portfolio = () => {
                 <h3 style={{ flexBasis: "40px" }}>{project.title}</h3>
               </a>
               <p className="small">{project.description}</p>
+              <div style={{ display: "flex", flexDirection: "row", gap: "1rem" }}>
+                {project.tags.map((tag) => (
+                  <p key={tag} className="tag">
+                    {tag}
+                  </p>
+                ))}
+              </div>
             </div>
           ))}
         </div>
