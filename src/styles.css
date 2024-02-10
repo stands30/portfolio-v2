@@ -13,6 +13,10 @@ body {
   padding: 0;
   width: 100%;
 }
+/* add a smooth scroll */
+html {
+  scroll-behavior: smooth;
+}
 
 div#main {
   display: flex;
@@ -130,4 +134,13 @@ img.socialIcon {
 .tag{
   color: #0d0c0c;
   font-weight: 400;
+}
+/* add a slide in animation */
+@keyframes slideIn {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
 }
