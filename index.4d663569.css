@@ -8,6 +8,10 @@ html, body {
   overflow-x: hidden;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 div#main {
   width: 100vw;
   flex-direction: column;
@@ -125,6 +129,16 @@ img.socialIcon {
 .tag {
   color: #0d0c0c;
   font-weight: 400;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(-100%);
+  }
+
+  to {
+    transform: translateX(0);
+  }
 }
 
 /*# sourceMappingURL=index.4d663569.css.map */
